@@ -29,19 +29,19 @@ function NavBar(props) {
                 <ul className="nav-items">
                     <li className="nav-item">
                         <NavLink to="/portfolio" exact activeClassName="active">
-                            Portfolios
+                            Projects
                         </NavLink>
                     </li>
 
                 </ul>
-                <ul className="nav-items">
+                {/* <ul className="nav-items">
                     <li className="nav-item">
                         <NavLink to="/blog" exact activeClassName="active">
                             Blogs
                         </NavLink>
                     </li>
 
-                </ul>
+                </ul> */}
                 <ul className="nav-items">
                     <li className="nav-item">
                         <NavLink to="/contact" exact activeClassName="active">
