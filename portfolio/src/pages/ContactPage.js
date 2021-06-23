@@ -8,7 +8,7 @@ function ContactPage(props) {
     return (
         <div>
         <div className="title">
-            <Title title={'Contact Me'} span={'Contact Me'} />
+            <Title title={'Contact Me'} subTitle={'Contact Me'} />
         </div>
         <div className="ContactPage">
             {/* <div className="map-sect">

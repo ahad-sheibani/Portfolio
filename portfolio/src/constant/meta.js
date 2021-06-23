@@ -125,12 +125,6 @@ export const skillData = [
         label:"60%"
     },
     {
-        name:"HTML",
-        id:"html",
-        scale:60,
-        label:"60%"
-    },
-    {
         name:"Knowledge of tools like Enzyme, Jest, Cypress, ESlint, Webpack, StoryBook and others",
         id:"test",
         scale:60,
