@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function ImageSection(props) {
+    const {t} = useTranslation()
     return (
         <div className="ImageSection">
             <div className="img">
@@ -8,34 +10,33 @@ function ImageSection(props) {
             </div>
             <div className="about-info">
                 <h4 >
-                    I am{" "}
+                {t('aboutMeImageSection.tile')}
                     <span>
-                        Ahad sheibani
+                    {t('aboutMeImageSection.span')}
                     </span>
                 </h4>
                 <p className="about-text">
-                    Front-End Developer with over 2 years of experience in front-end coding and deployment in a JavaScript environment
-                    and developing websites and web applications with react js. 2 years of above experience in working with live
-                    applications and troubleshooting exprtiese.
-                  
+                {t('aboutMeImageSection.main')}
+
+
                 </p>
                 <div className="about-details">
                     <div className="left-section">
-                        <p>Full Name:</p>
-                        <p>Age:</p>
-                        <p>Nationality:</p>
-                        <p>Languages</p>
-                        <p>Countries</p>
+                        <p>{t('aboutMeImageSection.nameTitle')}</p>
+                        <p>{t('aboutMeImageSection.ageTitle')}</p>
+                        <p>{t('aboutMeImageSection.nationalityTitle')}</p>
+                        <p>{t('aboutMeImageSection.langTitle')}</p>
+                        <p>{t('aboutMeImageSection.countryTitle')}</p>
                     </div>
                     <div className="right-section">
-                        <p>Ahad Sheibani</p>
-                        <p>27</p>
-                        <p>Iranian</p>
-                        <p>English,Persian</p>
-                        <p>Iran</p>
+                        <p>{t("aboutMeImageSection.name")}</p>
+                        <p>{t("aboutMeImageSection.age")}</p>
+                        <p>{t("aboutMeImageSection.Nationality")}</p>
+                        <p>{t("aboutMeImageSection.lang")}</p>
+                        <p>{t("aboutMeImageSection.country")}</p>
                     </div>
                 </div>
-                <a href="https://drive.google.com/drive/u/0/my-drive" className="btn">Download Cv
+                <a href="https://drive.google.com/drive/u/0/my-drive" className="btn">{t('aboutMeImageSection.btn')}
                 </a>
             </div>
 

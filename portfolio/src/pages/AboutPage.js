@@ -5,10 +5,15 @@ import SkillSection from '../components/SkillSection';
 import { ProgressBar } from "react-step-progress-bar";
 import { instituteData, skillData } from '../constant/meta';
 import Certificates from '../components/Certificates';
+import { useTranslation } from 'react-i18next';
+
+
+
 function AboutPage(props) {
+    const {t} = useTranslation()
     return (
         <div className="AboutPage" >
-            <Title title={"About ME"} subTitle={"About ME"} />
+            <Title title={t('aboutMe.title')} subTitle={t('aboutMe.title')} />
             <ImageSection />
 
             <Title title={"My Skills"} subTitle={"My Skills"} />

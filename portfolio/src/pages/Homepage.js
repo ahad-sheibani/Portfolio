@@ -3,21 +3,22 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 function Homepage(props) {
+    const { t  } = useTranslation()
     return (
         <div className="Homepage">
             <header className="hero">
                 <h1 className="hero-text">
-                    Hello I{"'"}m Ahad
+                {t("homePage.title")}
+                    {/*  */}
                     <br/>
-                    <span> I{"'"}m a Developer</span>
+                    <span> {t('homePage.span')}</span>
                 </h1>
                 <p className="h-sub-text">
-                    Front-End Developer with over 2 years of experience in front-end coding and deployment in a JavaScript environment
-                    and developing websites and web applications with react js. 2 years of above experience in working with live
-                    applications and troubleshooting exprtiese.                </p>
+                {t('homePage.main')}
+                           </p>
                 <div className="icons">
                     <a href="https://www.linkedin.com/feed/" className="icon-holder">
                         <FontAwesomeIcon icon={faLinkedinIn} className="icon ln" />

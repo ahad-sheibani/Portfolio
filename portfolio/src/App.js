@@ -23,6 +23,8 @@ function App() {
 
   return (
     <div className="App">
+          <Suspense fallback={<p>Loading..</p>}>
+
       <div className={`sidebar ${navToggle ? 'nav-toggle' : ''}`}>
         <NavBar />
       </div>
@@ -35,7 +37,6 @@ function App() {
 
       <div className="main-content">
         <div className="content">
-          <Suspense fallback={<p>Loading..</p>}>
             <Switch>
               <Route path={ROUTES.HOMEPAGE} exact component={homePage} />
               <Route path={ROUTES.ABOUT} exact component={aboutPage} />
@@ -44,12 +45,13 @@ function App() {
               <Route path={ROUTES.CONTACT} exact component={contactPage} />
               <Route component={NotFound} />
             </Switch>
-          </Suspense>
 
           {/* <HomePage /> */}
         </div>
 
       </div>
+          </Suspense>
+
     </div>
   );
 }

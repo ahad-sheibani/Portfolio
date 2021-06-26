@@ -131,7 +131,7 @@ export const skillData = [
         label:"60%"
     },
     {
-        name:"Knowledge of Node Package Management, Redux, Redux thunk,Context, GitHub repository and Scrum methodology",
+        name:"Knowledge of Node Package Management, Redux, Redux thunk,Context,Responsive design, GitHub repository and Scrum methodology",
         id:"scrum",
         scale:60,
         label:"60%"

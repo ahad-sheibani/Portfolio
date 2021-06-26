@@ -1,7 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom'
 
 function NavBar(props) {
+    const { t,i18n  } = useTranslation()
+
+    const changeLanguage = () =>{
+       if(i18n.language ==="en") 
+        i18n.changeLanguage("fa")
+        else
+        i18n.changeLanguage("en")
+    }
+
     return (
         <div className="NavBar">
 
@@ -13,7 +23,7 @@ function NavBar(props) {
                 <ul className="nav-items">
                     <li className="nav-item">
                         <NavLink to="/" exact activeClassName="active">
-                            Home
+                            {t("navBar.home")}
                         </NavLink>
                     </li>
 
@@ -21,7 +31,7 @@ function NavBar(props) {
                 <ul className="nav-items">
                     <li className="nav-item">
                         <NavLink to="/about" exact activeClassName="active">
-                            About me
+                            {t("navBar.aboutMe")}
                         </NavLink>
                     </li>
 
@@ -29,7 +39,7 @@ function NavBar(props) {
                 <ul className="nav-items">
                     <li className="nav-item">
                         <NavLink to="/portfolio" exact activeClassName="active">
-                            Projects
+                            {t("navBar.projects")}
                         </NavLink>
                     </li>
 
@@ -45,11 +55,15 @@ function NavBar(props) {
                 <ul className="nav-items">
                     <li className="nav-item">
                         <NavLink to="/contact" exact activeClassName="active">
-                            Contact
+                            {t("navBar.contact")}
                         </NavLink>
                     </li>
                 </ul>
                 <footer className="footer">
+                    <div onChange={changeLanguage} >
+                        <input type="radio" value="en" name="language"  /> English
+                        <input type="radio" value="zh-hk" name="language" /> persian
+                    </div>
                     <p>
                         @2021 Ahad Sheibani
                     </p>
