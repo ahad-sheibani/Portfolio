@@ -18,7 +18,6 @@ function AboutPage(id) {
     const { t } = useTranslation()
 
     const downloadGenerate = (id) => () => {
-        console.log("🚀 ~ file: AboutPage.js ~ line 21 ~ downloadGenerate ~ id", id)
         if (id === "javaScript") {
             var doc = new jsPDF('landscape', 'px', 'a4', 'false');
             doc.loadFile(JavaScriptCertificate, 'PDF', 65, 20, 500, 400)
@@ -34,7 +33,7 @@ function AboutPage(id) {
     }
     return (
         <div className="AboutPage" >
-            <Title title={t('aboutMe.title')} subTitle={t('aboutMe.title')} />
+            {/* <Title title={t('aboutMe.title')} subTitle={t('aboutMe.title')} /> */}
             <ImageSection />
 
             <Title title={t('mySkills.title')} subTitle={t('mySkills.title')} />

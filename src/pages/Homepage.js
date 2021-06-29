@@ -11,10 +11,10 @@ function Homepage(props) {
         <div className="Homepage">
             <header className="hero">
                 <h1 className="hero-text">
-                {t("homePage.title")}
+                {/* {t("homePage.title")} */}
                     {/*  */}
                     <br/>
-                    <span> {t('homePage.span')}</span>
+                    {/* <span> {t('homePage.span')}</span> */}
                 </h1>
                 <p className="h-sub-text">
                 {t('homePage.main')}
