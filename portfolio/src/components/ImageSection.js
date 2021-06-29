@@ -1,8 +1,17 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import  jsPDF  from "jspdf";
+import MyResume  from "../assets/img/MyResume.pdf"
 
 function ImageSection(props) {
     const {t} = useTranslation()
+
+     const downloadGenerate=()=>{
+         var doc =new jsPDF('landscape','px','a4','false');
+         doc.loadFile(MyResume,'PDF',65,20,500,400) ;
+
+    }
+
     return (
         <div className="ImageSection">
             <div className="img">
@@ -36,8 +45,12 @@ function ImageSection(props) {
                         <p>{t("aboutMeImageSection.country")}</p>
                     </div>
                 </div>
-                <a href="https://drive.google.com/drive/u/0/my-drive" className="btn">{t('aboutMeImageSection.btn')}
-                </a>
+                <div className="btnContainer">
+                <button onClick={downloadGenerate} className="btn">{t('aboutMeImageSection.btn')}
+                </button>
+
+                </div>
+               
             </div>
 
         </div>

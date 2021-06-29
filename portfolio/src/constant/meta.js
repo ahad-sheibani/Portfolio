@@ -142,18 +142,22 @@ export const instituteData = [
     {
         title:"HTML, CSS AND JAVASCRIPT FOR WEB DEVELOPERS",
         institute:"Coursera",
-        date:"June 2021"
+        date:"June 2021",
+        id:"javaScript"
     },
     {
         title:"INTRODUCTION TO HTML5",
         institute:"Coursera",
-        date:"Date: March 2021"
+        date:"Date: March 2021",
+        id:"html"
         
     },
     {
         title:"React + Redux course",
         institute:"Solo-Learn",
-        date:"Date: June 2021"
+        date:"Date: June 2021",
+        id:"react",
+
         
     }
 ]
