@@ -22,12 +22,13 @@
     "react-step-progress-bar": "^1.0.3",
     "sass-loader": "^12.1.0",
     "scss": "^0.2.4",
+    "serve": "^12.0.0",
     "vercel": "^23.0.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI=false && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
