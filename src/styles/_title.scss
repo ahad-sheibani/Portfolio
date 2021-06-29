@@ -29,40 +29,40 @@
 
     @media screen and (max-width: 411px){
         span{
-            font-size: 70%;
-            position: absolute;
-            top: 15%;
-            left: 0;
+            font-size: 70% !important;
+            position: absolute !important;
+            top: 15% !important;
+            left: 0 !important;
             // font-size: 5rem;
-            opacity: 0.07;
+            opacity: 0.07 !important;
         }
     }
     @media screen and (max-width: 1500px){
         span{
-            font-size: 2.8rem;
-            position: absolute;
-            top:50%;
-            left: 10%;
-            opacity: 0.07;
+            font-size: 2.8rem !important;
+            position: absolute !important;
+            top:50% !important;
+            left: 10% !important;
+            opacity: 0.07 !important;
         }
     }
     @media screen and (max-width: 700px){
         span{
-            font-size: 2.8rem;
-            position: absolute;
-            top:50%;
-            left: 10%;
-            opacity: 0.07;
+            font-size: 2.8rem !important;
+            position: absolute !important;
+            top:50% !important;
+            left: 10% !important;
+            opacity: 0.07 !important;
         }
     }
     @media screen and (max-width: 480px){
         span{
-            position: absolute;
-            top: 70%;
-            left: 8%;
-            line-height: 40px;
-            font-size: 2.5rem;
-            opacity: 0.07;
+            position: absolute !important;
+            top: 70% !important;
+            left: 8% !important;
+            line-height: 40px !important;
+            font-size: 2.5rem !important;
+            opacity: 0.07 !important;
         }
         h2{
             font-size: 70%;
