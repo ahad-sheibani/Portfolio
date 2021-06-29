@@ -16,13 +16,13 @@ function AboutPage(props) {
             <Title title={t('aboutMe.title')} subTitle={t('aboutMe.title')} />
             <ImageSection />
 
-            <Title title={"My Skills"} subTitle={"My Skills"} />
+            <Title title={t('mySkills.title')} subTitle={t('mySkills.title')} />
             <div className="skillsContainer">
             {skillData.map((item)=>{
                 return   <SkillSection skill={item.name} percent={item.scale} label={item.label}/>
             })}
             </div>
-            <Title title={"Certifications"} subTitle={"Certifications"} />
+            <Title title={t('certifications.title')} subTitle={t('certifications.title')} />
             <div className="certificateContainer" >
             {instituteData.map((item)=>{
                 return <Certificates title={item.title} institute={item.institute} date={item.date}/>

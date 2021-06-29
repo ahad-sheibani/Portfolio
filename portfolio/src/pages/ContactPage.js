@@ -4,11 +4,14 @@ import Title from '../components/Title'
 import phone from '../img/phone.svg'
 import email from '../img/email.svg'
 import telegram from '../img/telegram.svg'
+import { useTranslation } from 'react-i18next';
 function ContactPage(props) {
+    const {t} = useTranslation()
+
     return (
         <div>
         <div className="title">
-            <Title title={'Contact Me'} subTitle={'Contact Me'} />
+            <Title title={t("contactMe.title")} subTitle={t("contactMe.title")} />
         </div>
         <div className="ContactPage">
             {/* <div className="map-sect">

@@ -60,10 +60,10 @@ function NavBar(props) {
                     </li>
                 </ul>
                 <footer className="footer">
-                    <div onChange={changeLanguage} >
+                    {/* <div onChange={changeLanguage} >
                         <input type="radio" value="en" name="language"  /> English
                         <input type="radio" value="zh-hk" name="language" /> persian
-                    </div>
+                    </div> */}
                     <p>
                         @2021 Ahad Sheibani
                     </p>

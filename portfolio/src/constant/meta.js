@@ -149,6 +149,12 @@ export const instituteData = [
         institute:"Coursera",
         date:"Date: March 2021"
         
+    },
+    {
+        title:"React + Redux course",
+        institute:"Solo-Learn",
+        date:"Date: June 2021"
+        
     }
 ]
 export const realProjectData = [

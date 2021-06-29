@@ -23,7 +23,6 @@ i18n
     },
     react: {
       wait: false,
-      useSuspense: false,
 
     }
   })
