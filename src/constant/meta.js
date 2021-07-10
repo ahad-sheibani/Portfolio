@@ -28,16 +28,17 @@ export const portfolios = [
         title: 'Instagram Clone',
         detail:"Based on React js, Tailwind css, firebase"
     },
-    // {
-    //     id: 3,
-    //     category: 'Animation',
-    //     link1: 'www.youtube.com',
-    //     link2: 'www.github.com',
-    //     icon1: 'Github',
-    //     icon2: 'Demo',
-    //     image: port3,
-    //     title: 'Autodesk Maya'
-    // },
+    {
+        id: 3,
+        category: 'faceBook-uiClone',
+        link1: 'https://github.com/ahad-sheibani/faaceBook-uiClone',
+        link2: 'https://github.com/ahad-sheibani/faaceBook-uiClone',
+        icon1: 'Github',
+        icon2: 'Demo',
+        image: port3,
+        title: 'faceBook-Clone',
+        detail:"Based on TailWind css"
+    },
     // {
     //     id: 4,
     //     category: 'Javascript',

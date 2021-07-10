@@ -2,7 +2,6 @@ import React from 'react';
 import Title from '../components/Title'
 import ImageSection from '../components/ImageSection';
 import SkillSection from '../components/SkillSection';
-import { ProgressBar } from "react-step-progress-bar";
 import { instituteData, skillData } from '../constant/meta';
 import Certificates from '../components/Certificates';
 import { useTranslation } from 'react-i18next';
@@ -19,8 +18,8 @@ function AboutPage(id) {
 
     const downloadGenerate = (id) => () => {
         if (id === "javaScript") {
-            var doc = new jsPDF('landscape', 'px', 'a4', 'false');
-            doc.loadFile(JavaScriptCertificate, 'PDF', 65, 20, 500, 400)
+            // var doc = new jsPDF('landscape', 'px', 'a4', 'false');
+            // doc.loadFile(JavaScriptCertificate, 'PDF', 65, 20, 500, 400)
         } else if (id === "html") {
             var doc = new jsPDF('landscape', 'px', 'a4', 'false');
             doc.loadFile(HTMCertificate, 'PDF', 65, 20, 500, 400)

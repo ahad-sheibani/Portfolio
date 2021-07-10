@@ -1,7 +1,7 @@
 import React from 'react';
 
 function RealProject(props) {
-    const { title, institute, date,link } = props;
+    const { title, institute, date,link,site } = props;
     return (
         <div className="certificateSection" >
             <div className="certificateContainer">
@@ -13,6 +13,8 @@ function RealProject(props) {
                     <p className="courseTitle">{title}</p>
                     <p className="courseInstitute">{institute}</p>
                     <p className="courseDate">{date}</p>
+                    <p className="courseDate">{link}</p>
+                   
                     {/* <a className="courseLink">{link}</a> */}
 
 
